@@ -9,6 +9,6 @@ public class TD_WindowEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "TD_Window", "CustomAssetEditor" } );
+		ExtraModuleNames.AddRange( new string[] { "TD_Window", "TD_Editor" } );
 	}
 }
