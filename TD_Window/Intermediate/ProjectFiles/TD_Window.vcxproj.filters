@@ -3,16 +3,16 @@
   <ItemGroup>
     <None Include="..\..\TD_Window.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{90F55C3A-A545-4098-A9C4-344C77E5C958}</UniqueIdentifier>
+      <UniqueIdentifier>{2F7A9514-C895-4143-BFE5-5C5A7160A216}</UniqueIdentifier>
     </Filter>
+    <None Include="..\..\Source\TD_Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
     <None Include="..\..\Source\TD_Window.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <None Include="..\..\Source\TD_WindowEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{3E394D3C-890B-4E3A-A942-FF6F7BD3DA28}</UniqueIdentifier>
+      <UniqueIdentifier>{E58BB6D2-C906-451C-B4A2-2C174A351767}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,26 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Source\TD_Editor">
+      <UniqueIdentifier>{FFED4F06-3E03-4887-8F29-DB30239A37C6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TD_Editor\TD_Editor.Build.cs">
+      <Filter>Source\TD_Editor</Filter>
+    </None>
+    <Filter Include="Source\TD_Editor\Private">
+      <UniqueIdentifier>{CEA5030D-E711-4D45-A1C4-3DDFAA9C84E5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TD_Editor\Private\TD_Editor.cpp">
+      <Filter>Source\TD_Editor\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TD_Editor\Public">
+      <UniqueIdentifier>{DB961B30-29BC-4870-B821-50083B89EF50}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TD_Editor\Public\TD_Editor.h">
+      <Filter>Source\TD_Editor\Public</Filter>
+    </ClInclude>
     <Filter Include="Source\TD_Window">
-      <UniqueIdentifier>{661379D2-E2A2-42D6-A2FC-C34284812341}</UniqueIdentifier>
+      <UniqueIdentifier>{497D60FA-C0F9-4971-88B0-0663CC0AAA37}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TD_Window\TD_Window.Build.cs">
       <Filter>Source\TD_Window</Filter>
@@ -41,32 +59,5 @@
     <ClInclude Include="..\..\Source\TD_Window\TD_WindowGameModeBase.h">
       <Filter>Source\TD_Window</Filter>
     </ClInclude>
-    <None Include="TD_Editor.Build.cs">
-      <Filter>Source\TD_Editor</Filter>
-    </None>
-    <None Include="TD_Editor.Target.cs">
-      <Filter>Source\TD_Editor</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Source\TD_Editor">
-      <UniqueIdentifier>{a9bd3f10-f0f8-4ce5-bec3-0902b7f27e25}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\TD_Editor\Public">
-      <UniqueIdentifier>{8af819c8-c74b-4f38-89ef-ee240a9013b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\TD_Editor\Private">
-      <UniqueIdentifier>{bb6d9c3d-8abc-46fd-9018-3ccf691d3039}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="TD_Editor.h">
-      <Filter>Source\TD_Editor\Public</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="TD_Editor.cpp">
-      <Filter>Source\TD_Editor\Private</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

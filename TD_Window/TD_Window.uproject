@@ -9,10 +9,10 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		},
-    {
+		{
 			"Name": "TD_Editor",
 			"Type": "Editor",
-			"LoadingPhase":  "PreDefault" 
-    }
+			"LoadingPhase": "Default"
+		}
   ]
 }

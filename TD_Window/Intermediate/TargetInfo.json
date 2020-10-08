@@ -1,14 +1,14 @@
 {
 	"Targets": [
 		{
+			"Name": "TD_Editor",
+			"Path": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor.Target.cs",
+			"Type": "Editor"
+		},
+		{
 			"Name": "TD_Window",
 			"Path": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Window.Target.cs",
 			"Type": "Game"
-		},
-		{
-			"Name": "TD_WindowEditor",
-			"Path": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_WindowEditor.Target.cs",
-			"Type": "Editor"
 		}
 	]
 }

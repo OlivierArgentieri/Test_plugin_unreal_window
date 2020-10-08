@@ -1,8 +1,8 @@
 {
-	"Name": "TD_WindowEditor",
+	"Name": "TD_Editor",
 	"Configuration": "Development",
 	"Platform": "Win64",
-	"TargetFile": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_WindowEditor.Target.cs",
+	"TargetFile": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor.Target.cs",
 	"ProjectFile": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\TD_Window.uproject",
 	"EnvironmentIncludePaths": [
 		"D:\\Unreal_editors\\UE_4.25\\Engine\\Source",
@@ -1331,6 +1331,13 @@
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
 				"TD_Window"
+			]
+		},
+		{
+			"File": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Binaries\\Win64\\UE4Editor-TD_Editor.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"TD_Editor"
 			]
 		},
 		{
@@ -12903,8 +12910,45 @@
 			"ApiDefinitions": [
 				"TD_WINDOW_API="
 			],
-			"ShouldAddLegacyPublicIncludePaths": false,
+			"ShouldAddLegacyPublicIncludePaths": true,
 			"GeneratedCodeDirectory": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\TD_Window",
+			"SharedPCHFilePath": "D:\\Unreal_editors\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Public\\EngineSharedPCH.h"
+		},
+		"TD_Editor": 
+		{
+			"Name": "TD_Editor",
+			"Directory": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor",
+			"Rules": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor\\TD_Editor.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core",
+				"CoreUObject",
+				"Engine",
+				"InputCore",
+				"TD_Window"
+			],
+			"PublicIncludePaths": [
+				"D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor\\Public",
+				"D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source"
+			],
+			"LegacyPublicIncludePaths": [
+				"D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor"
+			],
+			"PrivateIncludePaths": [
+				"D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Source\\TD_Editor\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ProjectDefinitions": [
+				"IMPLEMENT_ENCRYPTION_KEY_REGISTRATION()=",
+				"IMPLEMENT_SIGNING_KEY_REGISTRATION()="
+			],
+			"ApiDefinitions": [
+				"TD_EDITOR_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": true,
+			"GeneratedCodeDirectory": "D:\\Projet\\PullGithub\\Test_plugin_unreal_window\\TD_Window\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\TD_Editor",
 			"SharedPCHFilePath": "D:\\Unreal_editors\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Public\\EngineSharedPCH.h"
 		},
 		"BuildSettings": 
