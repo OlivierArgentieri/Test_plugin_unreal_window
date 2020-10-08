@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.25",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "TD_Window",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+    {
+			"Name": "TD_Editor",
+			"Type": "Editor",
+			"LoadingPhase":  "PreDefault" 
+    }
+  ]
+}
