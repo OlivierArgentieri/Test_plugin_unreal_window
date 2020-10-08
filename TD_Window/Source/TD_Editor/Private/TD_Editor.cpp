@@ -8,7 +8,8 @@ IMPLEMENT_GAME_MODULE(FTD_EditorModule, TD_Editor);
 
 void FTD_EditorModule::StartupModule()
 {
-    
+    FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("OK"));
+	
     //UE_LOG(TD_Editor, Warning, TEXT("TD_Editor: Log Started"));
 }
 
