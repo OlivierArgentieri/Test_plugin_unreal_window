@@ -1,5 +1,5 @@
 #pragma once
-
+/*
 #include "CoreMinimal.h"
 
 #include "Modules/ModuleInterface.h"
@@ -14,4 +14,5 @@ public:
     virtual void StartupModule() override;
     virtual void ShutdownModule() override;
 
-};
+};*/
+

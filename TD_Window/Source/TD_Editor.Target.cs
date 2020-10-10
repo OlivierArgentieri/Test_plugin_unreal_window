@@ -11,4 +11,3 @@ public class TD_EditorTarget : TargetRules
         ExtraModuleNames.AddRange(new string[] { "TD_Window", "TD_Editor" });
     }
 }
-#pragma once
