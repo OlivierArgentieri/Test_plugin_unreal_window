@@ -1,4 +1,4 @@
-#include "TD_Editor.h"
+/*#include "TD_Editor.h"
 #include "Modules/ModuleManager.h"
 #include "Modules/ModuleInterface.h"
 
@@ -19,3 +19,5 @@ void FTD_EditorModule::ShutdownModule()
 }
 
 #undef LOCTEXT_NAMESPACE
+
+*/
