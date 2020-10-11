@@ -1,5 +1,9 @@
-#include "CustomAssetEditor.h"
 #include "ICustomAssetEditorModule.h"
+#include "Modules/ModuleManager.h"
+#include "IToolkit.h"
+#include "CustomAssetEditor.h"
+#include "IAssetTools.h"
+#include "AssetToolsModule.h"
 
 
 const FName CustomAssetEditorAppIdentifier = FName(TEXT("StaticMeshEditorApp"));
@@ -9,7 +13,7 @@ const FName CustomAssetEditorAppIdentifier = FName(TEXT("StaticMeshEditorApp"));
  * Custom Asset Editor Module
  */
 
-class FTD_CustomAssetEditorModule : public ICustomAssetEditorModule
+class FCustomAssetEditorModule : public ICustomAssetEditorModule
 {
 private:
 	TSharedPtr<FExtensibilityManager> MenuExtensibilityManager;
@@ -20,7 +24,7 @@ public:
 	
 	/* constructor */
 	
-	FTD_CustomAssetEditorModule(){}
+	FCustomAssetEditorModule(){}
 
 	/** Gets the extensibility managers for outside entities to extend custom asset editor's menus and toolbars */
 	virtual TSharedPtr<FExtensibilityManager> GetMenuExtensibilityManager() override { return MenuExtensibilityManager; }
@@ -58,5 +62,5 @@ public:
 	}
 };
 #undef LOCTEXT_NAMESPACE
-IMPLEMENT_GAME_MODULE(FTD_CustomAssetEditorModule, CustomAssetEditor);
+IMPLEMENT_GAME_MODULE(FCustomAssetEditorModule, CustomAssetEditor);
 

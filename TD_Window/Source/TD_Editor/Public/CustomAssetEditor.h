@@ -13,7 +13,7 @@ class UMyCustomAsset;
 /**
  *
  */
-class TD_EDITOR_API  FCustomAssetEditor : public ICustomAssetEditor
+class CUSTOMASSETEDITOR_API  FCustomAssetEditor : public ICustomAssetEditor
 {
 private:
 	// Create The properties tab and its content
@@ -61,7 +61,6 @@ public:
 	/* Begin IToolKit interface */
 	virtual FName GetToolkitFName() const override;
 	virtual FText GetBaseToolkitName() const override;
-	virtual FText GetToolkitName() const override;
 	virtual FText GetToolkitToolTipText() const override;
 	virtual FString GetWorldCentricTabPrefix() const override;
 	virtual FLinearColor GetWorldCentricTabColorScale() const override;
