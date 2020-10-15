@@ -18,4 +18,16 @@ protected:
 
 	// UI Command functions
 	void MenuCommand1();
+	void MenuCommand2();
+	void MenuCommand3();
+
+	// SubMenu
+	void MakeSubMenu(FMenuBuilder& _menuBuilder);
+
+	// custom widget
+	FName TagToAdd;
+	FReply AddTag();
+	FText GetTagToAddText() const;
+	void OnTagToAddTextCommited(const FText& _inText, ETextCommit::Type _commitInfo);
+	
 };

@@ -62,7 +62,7 @@ void FToolExampleEditor::StartupModule()
 	// call mother method
 	IExampleModuleInterface::StartupModule();
 
-//	FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("Enchantier"));
+	//FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("hey"));
 }
 
 void FToolExampleEditor::ShutdownModule()
