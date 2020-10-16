@@ -31,6 +31,12 @@ public:
 	{
 		return SNew(SDockTab);
 	}
+
+	virtual void MakeMenuEntry(FMenuBuilder& _menuBuilder)
+	{
+		FGlobalTabmanager::Get()->PopulateTabSpawnerMenu(_menuBuilder, TabName);
+	}
+	
 protected:
 	FName TabName;
 	FText TabDisplayName;

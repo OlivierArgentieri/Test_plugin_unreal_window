@@ -2,6 +2,7 @@
 #include "Modules/ModuleManager.h"
 #include "LevelEditor.h"
 #include "MenuTool/MenuTool.h"
+#include "TabTool/TabTool.h"
 
 IMPLEMENT_GAME_MODULE(FToolExampleEditor, ToolExampleEditor)
 
@@ -10,6 +11,7 @@ TSharedRef<FWorkspaceItem> FToolExampleEditor::MenuRoot = FWorkspaceItem::NewGro
 void FToolExampleEditor::AddModuleListeners()
 {
 	ModuleListeners.Add(MakeShareable(new MenuTool));
+	ModuleListeners.Add(MakeShareable(new TabTool));
 }
 
 void FToolExampleEditor::AddMenuExtension(const FMenuExtensionDelegate& _extensionDelegate, FName _extensionHook,

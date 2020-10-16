@@ -1,3 +1,6 @@
+#pragma once
+
+
 #include "IExampleModuleInterface.h"
 #include "Modules/ModuleManager.h"
 
