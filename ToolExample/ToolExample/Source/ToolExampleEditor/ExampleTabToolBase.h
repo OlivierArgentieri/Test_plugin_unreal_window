@@ -12,7 +12,7 @@ public:
 	virtual void OnStartupModule() override
 	{
 		Initialize();
-		FGlobalTabmanager::Get()->RegisterNomadTabSpawner(TabName, FOnSpawnTab::CreateRaw(this, &FExampleTabToolBase::SpawnTab))
+		FGlobalTabmanager::Get()->RegisterTabSpawner(TabName, FOnSpawnTab::CreateRaw(this, &FExampleTabToolBase::SpawnTab))
 			.SetGroup(FToolExampleEditor::Get().GetMenuRoot())
 			.SetDisplayName(TabDisplayName)
 			.SetTooltipText(ToolTipText);

@@ -1,13 +1,11 @@
 #include "TabTool.h"
-#include "TabToolPanel.h"
+#include "./ViewPort/TabToolViewport.h"
 
 
 void TabTool::OnStartupModule()
 {
 	FExampleTabToolBase::OnStartupModule();
-	FToolExampleEditor::Get().AddMenuExtension(
-		FMenuExtensionDelegate::CreateRaw(this, &TabTool::MakeMenuEntry), FName("Section_2"));
-	
+	FToolExampleEditor::Get().AddMenuExtension(FMenuExtensionDelegate::CreateRaw(this, &TabTool::MakeMenuEntry), FName("Section_2"));
 }
 
 
@@ -26,9 +24,9 @@ void TabTool::Initialize()
 TSharedRef<SDockTab> TabTool::SpawnTab(const FSpawnTabArgs& _tabSpawnArgs)
 {
 	TSharedRef<SDockTab> _spawnedTab = SNew(SDockTab)
-		.TabRole(ETabRole::NomadTab)
+		.TabRole(ETabRole::MajorTab)
 		[
-			SNew(TabToolPanel)
+			SNew(TabToolViewport)
 			.Tool(SharedThis(this))
 		];
 	

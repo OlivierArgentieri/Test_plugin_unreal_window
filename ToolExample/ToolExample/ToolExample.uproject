@@ -9,13 +9,19 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		},
-    {
-      "Name": "ToolExampleEditor",
-      "Type": "Editor",
+		{
+			"Name": "ToolExampleEditor",
+			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit",
 			"AdditionalDependencies": [
 				"Engine"
-			] 
-    }
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Composure",
+			"Enabled": true
+		}
 	]
 }

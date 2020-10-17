@@ -11,7 +11,6 @@ void TabToolPanel::Construct(const FArguments& _inArgs)
 		// action from tool object
 	}
 
-
 	ChildSlot
 	[
 		SNew(SScrollBox)
@@ -24,8 +23,9 @@ void TabToolPanel::Construct(const FArguments& _inArgs)
 			.Padding(15.0f)
 			[
 				SNew(STextBlock)
-				.Text(FText::FromString(TEXT("This is a tab example.")))
+				.Text(FText::FromString(TEXT("This is a tab example aaaasdasdasdsad.")))
 			]
 		]
+		
 	];
 }
