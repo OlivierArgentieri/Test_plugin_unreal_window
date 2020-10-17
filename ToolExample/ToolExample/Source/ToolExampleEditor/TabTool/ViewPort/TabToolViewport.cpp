@@ -104,8 +104,6 @@ void TabToolViewport::Construct(const FArguments& _inArgs)
 			[
 				SNew(STextBlock)
 				.Text(FText::FromString(TEXT("This is a tab example.")))
-				
-				
 			]
 		]
 	];
