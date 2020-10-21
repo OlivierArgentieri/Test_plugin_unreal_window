@@ -26,7 +26,7 @@ public class ToolExampleEditor : ModuleRules
 
         PrivateDependencyModuleNames.AddRange(new string[]
         {
-            "Core",
+            "Core", 
             "CoreUObject",
             "Engine",
             "AppFramework",
