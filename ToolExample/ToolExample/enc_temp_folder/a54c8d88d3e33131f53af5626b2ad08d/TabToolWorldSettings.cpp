@@ -1,4 +1,3 @@
-
 #include "TabToolWorldSettings.h"
 
 #include "Widgets/Layout/SScrollBox.h"
@@ -7,38 +6,47 @@
 #include "Engine/SkyLight.h"
 
 
+#define LOCTEXT_NAMESPACE "TabToolWorldSettings"
 void TabToolWorldSettings::Construct(const FArguments& _inArgs)
 {
 	tool = _inArgs._Tool;
+
 	
-		//world.
 	if (tool.IsValid())
 	{
 		// action from tool object
 	}
 
-	
-
-
-	
-	
 	ChildSlot
 		[
 			SNew(SScrollBox)
 			+ SScrollBox::Slot()
-		.VAlign(VAlign_Top)
-		.Padding(5)
-		[
-			SNew(SBorder)
-			.BorderBackgroundColor(FColor(192, 192, 192, 255))
-		.Padding(15.0f)
-		[
-			SNew(SSpinBox<float>)
-			.Value(0)
-			.OnValueChanged(this, &TabToolWorldSettings::OnIntensityChanged)
-			//.Text(FText::FromString(TEXT("This is a tab example aaaasdasdasdsad.")))
-		]
-		]
+			.VAlign(VAlign_Top)
+			.Padding(5)
+			[
+				SNew(SBorder)
+				.BorderBackgroundColor(FColor(192, 192, 192, 255))
+				.Padding(15.0f)
+				[
+					SNew(SSpinBox<float>)
+					.Value(0)
+					.OnValueChanged(this, &TabToolWorldSettings::OnIntensityChanged)
+				
+				]
+			]
+			+ SScrollBox::Slot()
+			.VAlign(VAlign_Top)
+			.Padding(5)
+			[
+				SNew(SButton)
+				
+				.OnClicked(this, &TabToolWorldSettings::HitButton)
+				[
+					SNew(STextBlock)
+					.Text(FText::FromString("test"))
+					.ToolTipText(LOCTEXT("OSEF", "Click Me!"))
+				]
+			]
 
 		];
 }
@@ -60,3 +68,12 @@ void TabToolWorldSettings::OnIntensityChanged(float NewValue)
 	ASkyLight* _test = Cast<ASkyLight>(_testLight);
 	_test->GetLightComponent()->Intensity = NewValue;
 }
+
+FReply TabToolWorldSettings::HitButton()
+{
+	FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("hey"));
+
+	return FReply::Handled();
+}
+
+#undef LOCTEXT_NAMESPACE

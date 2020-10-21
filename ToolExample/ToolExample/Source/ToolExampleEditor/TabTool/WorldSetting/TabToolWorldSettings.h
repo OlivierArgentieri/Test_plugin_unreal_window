@@ -17,4 +17,7 @@ private:
 
 protected:
 	TWeakPtr<TabTool> tool;
+	FOnClicked onClicked;
+
+	FReply HitButton();
 };
