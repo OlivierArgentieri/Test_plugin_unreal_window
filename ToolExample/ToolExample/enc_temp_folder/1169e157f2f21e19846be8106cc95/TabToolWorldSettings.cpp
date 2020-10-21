@@ -11,11 +11,17 @@ void TabToolWorldSettings::Construct(const FArguments& _inArgs)
 {
 	tool = _inArgs._Tool;
 	
+		//world.
 	if (tool.IsValid())
 	{
 		// action from tool object
 	}
 
+	
+
+
+	
+	
 	ChildSlot
 		[
 			SNew(SScrollBox)
@@ -30,7 +36,7 @@ void TabToolWorldSettings::Construct(const FArguments& _inArgs)
 			SNew(SSpinBox<float>)
 			.Value(0)
 			.OnValueChanged(this, &TabToolWorldSettings::OnIntensityChanged)
-			
+			//.Text(FText::FromString(TEXT("This is a tab example aaaasdasdasdsad.")))
 		]
 		]
 
